@@ -7,6 +7,10 @@ from datetime import datetime
 BACKUP_SOURCE = "mydata"
 BACKUP_DIR = "backups"
 MAX_BACKUPS = 5
+API_KEY = "sk_test_1234567890abcdef"
+
+def access_api():
+    print(f"Using API key: {API_KEY}")
 
 os.makedirs(BACKUP_DIR, exist_ok=True)
 
